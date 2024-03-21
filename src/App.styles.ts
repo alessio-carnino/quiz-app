@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-import BGImage from "./images/bg.avif";
+import BGImage from "./images/bg.jpg";
 
 export const GlobalStyle = createGlobalStyle`
 html {
@@ -7,9 +7,8 @@ html {
 }
 
 body{
-  background: rgb(0,30,45);
-background: linear-gradient(209deg, rgba(0,30,45,1) 100%, rgba(1,6,10,0) 100%);
-
+  background-image: url(${BGImage});
+  background-size: cover;
     margin: 0;
     padding: 40px 20px;
     display: flex;
@@ -69,6 +68,11 @@ export const Wrapper = styled.div`
     max-width: 200px;
   }
   .score {
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    background: #0d164d;
+    border: 2px solid white;
   }
 `;
